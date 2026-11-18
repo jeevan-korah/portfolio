@@ -162,6 +162,9 @@ a:hover .arr.r { transform: translateX(3px); }
 .polar .cap { position: absolute; left: 0; right: 0; bottom: 5px; text-align: center; font-family: var(--hand); font-size: 15px; color: #333; }
 .polar .tape { width: 44px; margin-left: -22px; height: 14px; top: -7px; background: rgba(251,241,184,.9); z-index: 1; }
 
+.copy { font: inherit; font-size: 12.5px; color: var(--gray); background: none; border: 0; padding: 0 2px; cursor: pointer; vertical-align: 1px; }
+.copy:hover { color: var(--ink); }
+
 /* say hi */
 .hi p { font-size: 16px; line-height: 1.7; }
 footer { margin-top: 90px; padding: 28px 0 60px; border-top: 1px solid var(--line); font-size: 13px; color: var(--gray); display: flex; justify-content: space-between; }

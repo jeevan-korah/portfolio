@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Cover } from "@/components/Preview";
+import { EmailButton, CopyEmail } from "@/components/EmailButton";
 import { profile, projects, smallBuilds, timeline, scrapbook } from "@/lib/data";
 
 export default function Home() {
@@ -52,7 +53,7 @@ export default function Home() {
           <div className="talk">
             <span>Open to full-time roles in AI and full-stack.</span>
             <div className="btns">
-              <a className="btn dark" href={`mailto:${profile.email}`}>✉ Send an email</a>
+              <EmailButton className="btn dark" email={profile.email}>✉ Send an email</EmailButton>
               <a className="btn" href={profile.resume} target="_blank" rel="noopener">Résumé</a>
             </div>
           </div>
@@ -154,7 +155,7 @@ export default function Home() {
       <section className="hi" id="say-hi">
         <h2>say hi.</h2>
         <p>
-          Email is best: <a className="u" href={`mailto:${profile.email}`}>{profile.email}</a>. I&apos;m also on{" "}
+          Email is best: <a className="u" href={`mailto:${profile.email}`}>{profile.email}</a> <CopyEmail email={profile.email} />. I&apos;m also on{" "}
           <a className="u" href={profile.linkedin} target="_blank" rel="noopener">LinkedIn</a> and{" "}
           <a className="u" href={profile.github} target="_blank" rel="noopener">GitHub</a>.
         </p>
