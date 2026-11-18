@@ -7,6 +7,7 @@ const serif = Instrument_Serif({ subsets: ["latin"], weight: "400", style: ["nor
 const hand = Caveat({ subsets: ["latin"], variable: "--font-hand" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://jeevankorah.vercel.app"),
   title: "Jeevan Biju Korah · Full-stack & AI engineer",
   description:
     "Full-stack engineer building AI products people can trust. Product Engineer Intern at CareStack, final-year CS at FISAT.",
