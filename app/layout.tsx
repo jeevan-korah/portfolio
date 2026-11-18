@@ -14,8 +14,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Jeevan Biju Korah",
     description: "Full-stack engineer building AI products people can trust.",
-    images: ["/profile.webp"],
+    images: [{ url: "/og.jpg", width: 800, height: 800, alt: "Jeevan Biju Korah" }],
   },
+  twitter: { card: "summary" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
