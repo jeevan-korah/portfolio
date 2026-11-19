@@ -38,9 +38,13 @@ export default function Home() {
         </p>
         <div className="meta">
           <span><span className="dot" />{profile.location}</span>
-          <span>·</span>
+          <span className="sep">·</span>
+          <a className="u" href={profile.linkedin} target="_blank" rel="noopener">LinkedIn <span className="arr">↗</span></a>
+          <span className="sep">·</span>
+          <a className="u" href={profile.github} target="_blank" rel="noopener">GitHub <span className="arr">↗</span></a>
+          <span className="sep">·</span>
           <a className="u" href={profile.resume} target="_blank" rel="noopener">résumé ↓</a>
-          <span>·</span>
+          <span className="sep">·</span>
           <a className="u" href="#say-hi">say hi ↓</a>
         </div>
 

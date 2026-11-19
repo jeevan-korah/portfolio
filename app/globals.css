@@ -201,6 +201,8 @@ footer { margin-top: 90px; padding: 28px 0 60px; border-top: 1px solid var(--lin
   .sf { grid-template-columns: 1fr; }
   .sf .cal .slot:not(.gap) { display: none; }
   .stats b { font-size: 24px; }
+  .meta { gap: 8px 16px; }
+  .meta .sep { display: none; }
   .talk { flex-direction: column; align-items: flex-start; }
   .tl .row { grid-template-columns: 1fr; gap: 2px; }
   .scrap { grid-template-columns: 1fr 1fr; gap: 16px; }
