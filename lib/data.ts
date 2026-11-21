@@ -100,8 +100,15 @@ export const projects: Project[] = [
     tagline: "Non-technical teams ask their database questions in plain English and get back the SQL and the answer.",
     stack: ["React", "Node.js", "Express", "PostgreSQL", "Prisma", "Groq LLM", "Docker", "AWS"],
     links: [
-      { label: "live demo", href: "https://mini-project-indol-six.vercel.app/" },
+      { label: "live demo", href: "https://datapilot-ai-theta.vercel.app/" },
       { label: "code", href: "https://github.com/jeevan-korah/datapilot-ai" },
+    ],
+    gallery: [
+      { src: "/datapilot/architecture.png", caption: "System architecture: React frontend, Express API, prompt engineering and SQL validation layers, and the Schema Intelligence Engine, the RAG pipeline that profiles each database." },
+      { src: "/datapilot/employee-query.jpg", caption: "Employee view: ask a question about the company database in plain English, with past questions kept in history." },
+      { src: "/datapilot/admin-connection.jpg", caption: "Admin view: connect a PostgreSQL database and DataPilot detects its tables and foreign keys automatically." },
+      { src: "/datapilot/database-explorer.jpg", caption: "Database explorer: browse the tables DataPilot found in the connected database." },
+      { src: "/datapilot/data-model.png", caption: "DataPilot's own data model: companies, users, roles with per-table permissions, query requests and the SQL generated for each." },
     ],
     sections: [
       {
